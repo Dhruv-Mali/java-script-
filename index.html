@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>great-user</title>
+  </head>
+  <body>
+    <h1 class="great"></h1>
+    <script>
+      let text;
+      let a = new Date().getHours();
+
+      if (a >= 5 && a < 12) {
+        // console.log("good morning");
+        text = "good morning";
+      } else if (a >= 12 && a < 16) {
+        // console.log("good afternoon");
+        text = "good afternoon";
+      } else if (a >= 16 && a < 20) {
+        // console.log("good evening");
+        text = "good evening";
+      } else {
+        // console.log("good night");
+        text = "good night";
+      }
+      let name = document.querySelector(".great");
+      name.innerHTML = `${text}`;
+      name.style.color = "purple";
+    </script>
+  </body>
+</html>
